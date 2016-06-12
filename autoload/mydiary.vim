@@ -13,6 +13,8 @@ function! mydiary#new ()
     end
 
     call append(line('$'), strftime("## (%H:%M)"))
+    call append(line('$'), "")
+
     call cursor("$", "^")
     startinsert
 endfunction
